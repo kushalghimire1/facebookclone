@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f0f2f5;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:100%;
+    max-width:1100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.left-section{
+    width:50%;
+}
+
+.left-section h1{
+    color:#1877f2;
+    font-size:70px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.left-section p{
+    font-size:30px;
+    color:#1c1e21;
+    max-width:500px;
+}
+
+.right-section{
+    width:40%;
+}
+
+.login-box{
+    background:#fff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 12px rgba(0,0,0,0.15);
+}
+
+.login-box form{
+    display:flex;
+    flex-direction:column;
+}
+
+.login-box input{
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    font-size:16px;
+}
+
+.login-box input:focus{
+    outline:none;
+    border-color:#1877f2;
+}
+
+.login-btn{
+    background:#1877f2;
+    color:#fff;
+    border:none;
+    padding:14px;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.login-btn:hover{
+    background:#166fe5;
+}
+
+.login-box a{
+    text-decoration:none;
+    color:#1877f2;
+    text-align:center;
+    margin:15px 0;
+}
+
+.login-box a:hover{
+    text-decoration:underline;
+}
+
+hr{
+    margin-bottom:20px;
+    border:1px solid #eee;
+}
+
+.create-btn{
+    background:#42b72a;
+    color:#fff;
+    border:none;
+    padding:14px;
+    border-radius:6px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    width:70%;
+    margin:auto;
+}
+
+.create-btn:hover{
+    background:#36a420;
+}
+
+.bottom-text{
+    text-align:center;
+    margin-top:20px;
+    font-size:14px;
+}
+
+@media(max-width:768px){
+
+    .container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .left-section,
+    .right-section{
+        width:100%;
+    }
+
+    .left-section{
+        margin-bottom:30px;
+    }
+
+    .left-section h1{
+        font-size:55px;
+    }
+
+    .left-section p{
+        font-size:22px;
+        margin:auto;
+    }
+}
